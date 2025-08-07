@@ -1,0 +1,79 @@
+/* Cores padroes:
+verde padrao #0A6A1C
+verde claro #158329
+verde escuro #00420C
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background-color: #d2d3d6a6;
+}
+.main{
+    margin-top: 100px;
+    justify-items: center;
+    
+}
+.perfil {
+    display: flex;                 
+    flex-direction: column;
+    align-items: center;      
+    background: linear-gradient(to top,#00420C , #158329);
+    border-radius: 50px;
+    max-width: 400px;
+    width: 400px;
+    height: 700px;
+}
+.perfil img {
+    margin-top: 20px;
+    border-radius: 50%;
+    max-width: 100px;
+    
+}
+.perfil h4 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.botEmail{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: #d2d3d6;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.botEmail a{
+    text-decoration: none;
+    color: #000000d8;
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.botEmail img{
+    margin: 0px;
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 5px;
+}   
+
+.botEmail:hover{
+    background-color: #d2d3d6a6;
+}

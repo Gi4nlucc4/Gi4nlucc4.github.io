@@ -1,0 +1,838 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tentando n se matar */
+
+body{
+    background-color: #EDF4FF;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: linear-gradient(to bottom,#00420C , #158329);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 0px;
+    gap: 30px;
+    border-bottom: 30px solid #00420C;
+    margin-bottom: 20px;
+}
+
+.logo #logo-menor{
+    display: none;
+}
+
+.banner {
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.banner h5{
+    justify-content: center;
+    
+}
+
+.suporte{
+    border: solid 2px #000000a1;
+    background-color: #158329;
+    border-radius: 15px;
+    padding: 2px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.suporte a{
+    display: flex;
+    align-items:center ;
+    color: aliceblue;
+}
+.suporte img{
+    padding-left: 2px;
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.miniHeader{
+    display: flex;
+    background-color: #00420C;
+    align-items: center;
+    justify-content: end;
+    padding-top: 30px;
+    min-width: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.conteudoMain{
+    display: flex;
+    gap: 15px;
+    
+}
+.navLateral{
+    border: solid 1px #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    gap: 15px; 
+    padding: 20px;
+    max-width: 300px;
+    height: fit-content;
+}
+.navLateral h2{
+    text-align: center;
+    color: #158329;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.botaoEncontro{
+    border-top: solid 3px #0A6A1C;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 250px;
+}
+.navLateral button{
+    text-align: left;
+    background-color: #d2d3d6;
+    color: #000000a1;
+    padding: 15px 20px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: inherit;
+    width: 100%;
+    height: 70px;
+    max-height: 70px;
+    
+}
+.navLateral button:hover {
+    background-color: #4eaf5342; 
+}
+button:focus {
+    color: #00420C;
+    background-color: #3faa4491; 
+    outline: none; 
+    
+  }
+
+.navLateral button.selecionado {
+    background-color: #3faa4491;
+    color: #00420C;
+}
+
+.pagina {
+    margin-top: 10px;
+    margin-right: auto;
+    border: solid 1px #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    max-width: 800px;
+    height: auto;
+    min-height: 1700px;
+}
+.pagina h2{
+    text-align: center;
+    color: #158329;
+    width: inherit;
+    width: 96%;
+    margin: 2%;
+}
+.pagina h3{
+    text-align: center;
+    color: #158329;
+    width: inherit;
+    width: 96%;
+    margin: 2%;
+}
+.pagina p{
+    padding: 20px;
+    color: #000000;
+    background-color: #3faa4491;
+    border-radius: 5px;
+    line-height: 1.5;
+    text-align: justify;
+    width: inherit;
+    width: 96%;
+    margin: 2%;
+    text-indent: 30px;
+}
+
+.imagem-ilustrativa{
+    display: flex;
+    background-color: #0A6A1C;
+    border-radius: 24px;
+    padding: 5px;
+    width: inherit;
+    width: 70%;
+    height: 20rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.imagem-ilustrativa img{
+    border-radius: 22px;
+    width: 100%;
+    height: 100%;
+}
+.accordion{
+    width: inherit;
+    width: 96%;
+    justify-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.accordion-btn {
+    width: inherit;
+    width: 100%;
+    margin-top: 2%;
+    border-top: solid 3px #0A6A1C;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.accordion-btn button {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    width: 100%;
+    height: 3rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #d2d3d6;
+    color: #000000a1;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content:space-between;
+}
+.pagina button:hover {
+    background-color: #4eaf5342; 
+}
+
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-top: 0px;
+    width: inherit;
+    width: 96%;
+  
+}
+
+.accordion-content h3{
+    margin: 2%;
+}
+
+.accordion-videos iframe {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  background-color: #0A6A1C;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: inherit;
+  width: 100%;
+  height: 24rem;
+}
+
+.accordion.open .accordion-content {  
+  max-height: 3600px; 
+}
+
+.accordion-videos p{
+    display: none;
+    max-height: 0px;
+}
+
+.logosFerramentasTotal img {
+    border: solid 3px #00420C;
+    border-radius: 15px;
+}
+.logosFerramentasTotal{
+    background: linear-gradient(to top,#0A6A1C , #158329);
+    width: 96%;
+    padding: 1%;
+    margin: 2%;
+    border-radius: 15px;
+}
+.logosFerramentas{
+    padding: 10px 20px;
+    background: linear-gradient(to top,#868686 , #d2d3d6);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.logosFerramentas ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logosFerramentas li{
+    list-style: none;
+    
+}
+
+.logosFerramentas img{
+    max-width: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-height: 100px;
+    border-radius: 15px;
+}
+
+.logosFerramentas2{
+    padding: 10px 20px;
+    background: linear-gradient(to top,#868686 , #d2d3d6);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.logosFerramentas2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logosFerramentas2 li{
+    list-style: none;
+}
+.logosFerramentas2 img{
+    max-width: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-height: 100px;
+    border-radius: 15px;
+}
+
+
+.accordion-videos{
+        justify-items: center;
+    }
+
+.accordion-videos a{
+        text-align: center;
+    }
+
+.botao-link {
+    width: inherit;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;   
+    border: solid 2px #0A6A1C;
+}
+.botao-link button{
+    width: inherit;
+    width: 100%;
+    text-align: left;
+    background-color: #0A6A1C;
+    color: #000000a1;
+    border: solid 2px #d2d3d6;
+    border-radius: 10px;   
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    height: 3rem;    
+}
+
+.botao-link button :hover{
+    background-color: #158329;
+    border-radius: 10px;   
+
+}
+.botao-link a {
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+}
+aside#sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+aside#sidebar.aberto {
+    left: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#aguarde{
+    max-width: 800px;
+
+}
+
+.botaoMenu {
+    display: none;
+}
+aside#sidebar {
+    display: none;
+}
+
+/* -------------------------------------------------------Site quando for 1100px --------------------------------------------------------------*/
+@media (max-width: 1100px) {
+
+    /* Topo da pagina */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: fit-content;
+        flex-wrap: nowrap;
+        width: 100%;
+        background: linear-gradient(to bottom,#00420C , #158329);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 0px;
+        gap: 15px;
+        border-bottom: 30px solid #00420C;
+        margin-bottom: 20px;
+    }
+
+    .logo #logo-menor{
+    display: none;
+}
+
+    .header img{
+        max-width: 200px;
+    }
+    .banner {
+        color: aliceblue;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .banner h2{
+        font-size: 14px;
+
+
+    }
+    .banner h5{
+        justify-content: center;
+        font-size: 11px;
+    }
+    
+    .suporte{
+        border: solid 2px #000000a1;
+        background-color: #158329;
+        border-radius: 15px;
+        padding: 2px;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-left: 40px;
+        
+    
+    }
+    .suporte a{
+        display: flex;
+        align-items:center ;
+        color: aliceblue;
+    }
+    .suporte img{
+        padding-left: 2px;
+        max-width: 30px;
+        border-radius: 50%;
+    }
+    
+    /*Meio da pagina  */
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    .conteudoMain{
+        display: flex;
+        gap: 5px;
+       
+    }
+    /* Menu lateral */
+    .navLateral{
+        border: solid 1px #FFFFFF;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        display:flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+        gap: 5px; 
+        padding: 10px;
+        max-height: fit-content;
+        
+    }
+    .navLateral h2{
+        color: #158329;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 16px
+    }
+    .botaoEncontro{
+        border-top: solid 3px #0A6A1C;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 150px;
+    }
+    .navLateral button{
+        
+        text-align: left;
+        background-color: #d2d3d6;
+        color: #000000a1;
+        padding: 15px 20px;
+        border: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 11px;
+        cursor: pointer;
+        font-weight: bolder;
+        max-width: 250px;
+        width: 150px;
+        height: 60px;
+        max-height: 70px;
+        margin-bottom: 5px;
+    }
+     .navLateral button:hover {
+        background-color: #4eaf5342; 
+    }
+    button:focus {
+        color: #00420C;
+        background-color: #3faa4491; 
+        outline: none; 
+        
+      }
+    
+    .navLateral button.selecionado {
+        background-color: #3faa4491;
+        color: #00420C;
+    }
+    /* Ferramentas */
+    .logosFerramentasTotal{
+        display: flex;
+        justify-content: center;
+    }
+
+   
+    .logosFerramentas{
+        padding: 10px 20px;
+        background-color: #d2d3d6;
+        border-radius: 15px;
+        margin: 20px;
+        max-width: 140px;
+    }
+    
+    .logosFerramentas ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    
+    .logosFerramentas li{
+        list-style: none;
+    }
+    
+    .logosFerramentas img{
+        max-width: 100px;
+        width: 100px;
+        max-height: 100px;
+        max-height: 100px;
+        border-radius: 15px;
+    }
+    
+    .logosFerramentas2{
+        padding: 10px 20px;
+        background-color: #d2d3d6;
+        border-radius: 15px;
+        margin: 20px;
+        max-width: 140px;
+    }
+    
+    .logosFerramentas2 ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    
+    .logosFerramentas2 li{
+        list-style: none;
+    }
+    .logosFerramentas2 img{
+        max-width: 100px;
+        width: 100px;
+        max-height: 100px;
+        max-height: 100px;
+        border-radius: 15px;
+    
+    
+    }
+
+    
+
+
+    } 
+
+    
+
+/* Responsivo */
+@media (max-width: 719px) {
+  .botaoMenu {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+.botaoMenu img {
+    width: 1.4rem;
+}
+#staticbar {
+    display: none;
+  }
+
+.logo #logo-maior{
+    display: none;
+}
+
+.logo #logo-menor{
+    display: block;
+    
+}
+.logo #logo-menor img{
+    width: 2rem;
+}
+.banner {
+    padding: 0px;
+}
+.banner h2{
+    font-size: 11px;
+}
+.banner h5{
+    display: none;
+}
+.suporte{
+    margin-left: 0px;
+    border: solid 1px #000000a1;
+    background-color: #158329;
+    border-radius: 7.5px;
+    padding: 1px;
+
+}
+.suporte a{
+    font-size: 11px;
+    display: flex;
+    align-items:center ;
+    color: aliceblue;
+}
+.suporte img{
+    padding-left: 1px;
+    max-width: 15px;
+    border-radius: 50%;
+}
+
+.navLateral {
+    max-width: 180px;
+}
+
+
+
+.pagina p {
+    font-size: 18px;
+
+
+
+}
+.pagina h3 {
+    padding-left: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+.logosFerramentas{
+    padding: 10px 10px;
+    background-color: #d2d3d6;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.logosFerramentas ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logosFerramentas li{
+    list-style: none;
+}
+
+.logosFerramentas img{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+.logosFerramentas2{
+    padding: 10px 10px;
+    background-color: #d2d3d6;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.logosFerramentas2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logosFerramentas2 li{
+    list-style: none;
+}
+.logosFerramentas2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+}
+
+
+.imagem-ilustrativa{
+    display: flex;
+    background-color: #0A6A1C;
+    border-radius: 15px;
+    padding: 5px;
+    width: inherit;
+    width: 96%;
+    height: 20rem;
+    margin: 2%;
+}
+    .accordion-videos iframe {
+        padding: 5px;
+        height: 18rem;
+
+    }
+    .accordion-content{
+        margin: 20px;
+        padding: 0px;
+        
+
+    }
+
+#menu-toggle {
+    display: block;
+    }
+aside#sidebar {
+        display: block;
+    }
+}
+
+
+
+
+    h5{
+        text-align: center;
+    }
+
+
+
+
+
+#menu-toggle {
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(0, 0, 0, 0.258);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 15px;
+  z-index: 1002;
+  transition: left 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+#menu-toggle.ativo {
+  display: none; /* Ajuste para que o botão fique visível quando o menu estiver aberto */
+  
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* cor escura com transparência */
+  z-index: 900; /* menor que o menu lateral */
+  display: none; /* escondido por padrão */
+}
+
+#overlay.ativo {
+  display: block;
+}
+
+  #overlay {
+    display: none;
+  }
